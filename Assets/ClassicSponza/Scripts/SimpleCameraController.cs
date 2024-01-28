@@ -70,6 +70,8 @@ namespace UnityTemplateProjects
         [Tooltip("Whether or not to invert our Y axis for mouse input to rotation.")]
         public bool invertY = false;
 
+        
+
         void OnEnable()
         {
             m_TargetCameraState.SetFromTransform(transform);
@@ -108,6 +110,8 @@ namespace UnityTemplateProjects
         
         void Update()
         {
+           
+            
             // Hide and lock cursor when right mouse button pressed
             if (Input.GetMouseButtonDown(1))
             {
